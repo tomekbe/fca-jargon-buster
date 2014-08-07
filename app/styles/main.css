@@ -1,0 +1,79 @@
+
+
+
+/* app specific 
+
+*/
+#fca-app-wrap {
+ border:1px solid #000;
+
+}
+#fca-app {
+
+}
+#foot {
+  background: blue;
+}
+
+.definition {
+  display:none;
+}
+
+#fca-app .jb-selected{
+  border:none;
+  padding:0; margin:0;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left:5px; padding-right: 5px;
+  background:#870A36;
+  color:#FFFFFF;
+}
+#fca-app .jb-unselected{
+  border:none;
+  padding:0; margin:0;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left:5px; padding-right: 5px;
+  background:#FFFFFF;
+  text-decoration: underline;;
+  color:#870A36;
+  
+}
+#fca-app .jb-disabled{
+  border:none;
+  padding:0; margin:0;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left:5px; padding-right: 5px;
+  background:#FFFFFF;
+  text-decoration:none;
+  color:#dadada;
+  
+}
+.wrap {
+  background: #f8f8f8;
+  border-bottom: 1px solid #dadada;
+  padding: 15px;
+}
+
+#fca-app .word {
+  color:#870A36;
+  cursor:pointer;
+}
+
+#fca-app .arrow , #fca-app .arrow-unexpanded, #fca-app .arrow-expanded{
+
+
+  display: inline-block;
+  width:14px;
+  height:14px;
+  margin-right: 10px;
+}
+
+#fca-app .arrow-unexpanded {
+  background:url(../images/arrow-unexpanded.gif);
+
+}
+#fca-app .arrow-expanded {
+    background:url(../images/arrow-expanded.gif);
+}

@@ -1,0 +1,51 @@
+<!-- HEADER -->
+<h3 class="news-header red">FCA Jargon Buster</h3>
+<!-- THE END OF HEADER -->
+
+<!-- ALPHABET -->
+<div class="clearfix jargonbuttons" style="padding:20px;text-align:center">
+	<guzik info="a"></guzik>
+	<guzik info="b"></guzik>
+	<guzik info="c"></guzik>
+	<guzik info="d"></guzik>
+	<guzik info="e"></guzik>
+	<guzik info="f"></guzik>
+	<guzik info="g"></guzik>
+	<guzik info="h"></guzik>
+	<guzik info="i"></guzik>
+	<guzik info="j"></guzik>
+	<guzik info="k"></guzik>
+	<guzik info="l"></guzik>
+	<guzik info="m"></guzik>
+	<guzik info="n"></guzik>
+	<guzik info="o"></guzik>
+	<guzik info="p"></guzik>
+	<guzik info="r"></guzik>
+	<guzik info="s"></guzik>
+	<guzik info="t"></guzik>
+	<guzik info="u"></guzik>
+	<guzik info="v"></guzik>
+	<guzik info="w"></guzik>
+	<guzik info="x"></guzik>
+	<guzik info="y"></guzik>
+	<guzik info="z"></guzik>
+</div>
+<!-- THE END OF ALPHABET -->
+
+<!-- SEARCH BOX -->
+<div class="clearfix" style="background:#f4f4f4; border-top:1px solid #cccccc; border-bottom:1px solid #cccccc; padding-left:20px"> type to search:
+  <input ng-model="query" type="text" placeholder="Filter by word"  style="margin-top:9px"> 
+</div>
+<!-- THE END OF SEARCH BOX -->
+
+<!--- DICTIONARY -->
+<div ng-repeat="item in dictionary | MyFilter:myselect:query" class="dictionary">
+  <div class="wrap">
+
+    <!--<slownik atword="{{item.word}}"></slownik>-->
+    <slownik></slownik>
+    
+  
+  </div>
+</div>
+<!-- THE END OF DICTIONARY -->
