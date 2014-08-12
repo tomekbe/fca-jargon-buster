@@ -19,7 +19,10 @@ angular.module('jargonBuster.dictionaryService',[]).factory('dictionaryService',
 angular.module('jargonBuster.directives',[]).
 	directive("slownik", function() {
 		return {
-			restrict:"AE",
+			restrict:"E",
+	
+			
+
 		
 			link: function (scope,element,attrs) {
 
@@ -59,7 +62,8 @@ angular.module('jargonBuster.directives',[]).
 	}).directive ('guzik', function () {
 		return {
 			restrict: 'E',
-			
+		
+			replace: true,
 			scope: {
 				info: '=',
 				

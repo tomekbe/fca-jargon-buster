@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="http://fca.org.uk/static/fca-static/css/global.css">
     <link rel="stylesheet" href="http://fca.org.uk/static/fca-static/css/hoverover.css">
  <link rel="stylesheet" href="http://fca.org.uk/static/fca-static/css/forms.css">
+   
 
 
 
-    <!-- endbuild -->
   </head>
   <body >
  
@@ -32,15 +32,29 @@
   
   <div class="container">
       <div class="row">
-        <div class="twelve columns alpha"> 
+        <div class="twelve columns alpha" > 
           
+            <div id="fca-app-wrap">
+               <!--[if lte IE 8]>
+                <script>
+                  document.createElement('ng-include');
+                  document.createElement('ng-pluralize');
+                  document.createElement('ng-view');
+                    document.createElement('slownik');
+                      document.createElement('guzik');
 
-          <div id="fca-app-wrap">
+                  // Optionally these for CSS
+                  document.createElement('ng:include');
+                  document.createElement('ng:pluralize');
+                  document.createElement('ng:view');
+                </script>
+              <![endif]-->
+
             <div id="fca-app">This message shows until this div has not been bootstraped </div>
           </div>
 
           
-<span style="font-size:11px">This is regular content seating outside the scope of the web app</span>
+        <span style="font-size:11px">This is regular content seating outside the scope of the web app</span>
       </div>
     
       </div>
