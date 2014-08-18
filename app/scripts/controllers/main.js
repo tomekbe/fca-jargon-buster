@@ -7,15 +7,12 @@ angular.module('jargonBuster.controllers',[])
  
 
   	 $scope.myselect = "word";
-  	 //$scope.query = "A";
+
 
     
      // if  the routeParams is not supplied by default it selects A; 
      $scope.query = $routeParams.id || "A";
-    
-     //console.log("dupy",$routeParams.id)
-     //console.log("the newest");
-  	 //$scope.buttonstate = "jb-selected";
+
 
 
      $scope.all ={letter:'INDEX',state:'jb-unselected'};
@@ -57,13 +54,13 @@ angular.module('jargonBuster.controllers',[])
   	 // when the query is changed;
   	 $scope.$watch('query', 
   	 	function () {
-  	 	//console.log("change", $scope.query.length);
+  	
 	  	 	for(var i=0; i<$scope.buttonArray.length ;i++) {
-	  	 		//console.log($scope.buttonArray[i].letter,i)
+	  	
 
 	  	 		if(($scope.buttonArray[i].letter).toLowerCase() == ($scope.query).toLowerCase()) {
 	  	 			$scope.buttonArray[i].state = "jb-selected";
-	  	 			//console.log("true",$scope.buttonArray[i].letter,$scope.buttonArray[i].state)
+	  	 			
 
 	  	 		} else {
 	  	 			$scope.buttonArray[i].state = "jb-unselected";
@@ -81,11 +78,6 @@ angular.module('jargonBuster.controllers',[])
        $scope.query=l;
 	 }
 
-	 //$scope.$watch('query', function() {
-       //alert('hey, myVar has changed!');
-
-   	 
-   	 //});
 
   	 // loading data from JSONP
      dictionaryService.getDictionary().success(function (response) {

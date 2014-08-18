@@ -5,8 +5,8 @@ angular.module('jargonBuster.dictionaryService',[]).factory('dictionaryService',
 	 factory.getDictionary = function() {
       return $http({
         method: 'JSONP', 
-       /* url: 'http://ergast.com/api/f1/2013/driverStandings.json?callback=JSON_CALLBACK' */
-        url: 'http://pizg.net/tests/test_jsonp.php?callback=JSON_CALLBACK'
+   
+        url: 'http://view-it.co.uk/services/fca/jargon_buster.php?callback=JSON_CALLBACK'
       });
     }
 
@@ -77,28 +77,12 @@ angular.module('jargonBuster.directives',[]).
 							
 							element.bind("click", function(){
 
-								//console.log(scope.info.letter, scope.info.state, scope.$parent.query)		
-								//scope.$apply(function() { scope.query ="l"});
-
-								
-   								//scope.$parent.$digest();
+							
 
 
 
 								scope.$parent.$apply(function() { scope.$parent.query = scope.info.letter});
-											//scope.query = scope.info.letter;
-											//console.log(scope.info.state)
-
-									
-
-									//console.log(scope.info.letter, scope.$parent.query, element.html())
-									/*if(scope.info.state == "jb-selected") {
-										scope.info.state="jb-unselected"
-
-									} else if(scope.info.state =="jb-unselected") {
-										scope.info.state="jb-selected";
-									}
-									scope.$parent.$digest();*/
+								
 
 					})
 
@@ -106,7 +90,7 @@ angular.module('jargonBuster.directives',[]).
 
 			}, post: function(scope,element) {
 				if(scope.info.state!=="jb-disabled") {
-				//	scope.$parent.$watch('query', function() { scope.info.state="jb-unselected";});
+				
 
 				}
 			}
@@ -135,7 +119,7 @@ angular.module('jargonBuster.customFilters',[])
         	if(value&&list) 
         	
         	{
-            //console.log('MyFilter(list, ', propertyName, ', ', value, ')');
+            
        
        
   			if(value.length>1) {

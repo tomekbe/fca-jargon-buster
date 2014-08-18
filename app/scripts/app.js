@@ -30,11 +30,7 @@ setTimeout(function() {
       var all = window.document.getElementById('fca-app');
       var body = window.document.getElementById('fca-app-wrap');
       all.setAttribute('ng-view','');
-      //all.setAttribute('ng-animate',"'slide'");
       angular.bootstrap(body, ['jargonBuster']);
-      //document.getElementById('loader').style.display='none';
-
-
-      //alert("fix for IE8");
+ 
 
   }, 500);
