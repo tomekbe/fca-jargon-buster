@@ -5,7 +5,8 @@
 
 */
 #fca-app-wrap {
- border:1px solid #000;
+ border:1px solid #ccc;
+ margin-bottom: 20px;
 
 }
 #fca-app {

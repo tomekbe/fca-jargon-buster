@@ -13,11 +13,12 @@ angular.module('jargonBuster.controllers',[])
      // if  the routeParams is not supplied by default it selects A; 
      $scope.query = $routeParams.id || "A";
     
-     console.log("dupy",$routeParams.id)
-  
+     //console.log("dupy",$routeParams.id)
+     //console.log("the newest");
   	 //$scope.buttonstate = "jb-selected";
 
 
+     $scope.all ={letter:'INDEX',state:'jb-unselected'};
 
   	 $scope.a = { letter: 'A', state: 'jb-selected' };
  	   $scope.b = { letter: 'B', state: 'jb-unselected' };
@@ -47,6 +48,7 @@ angular.module('jargonBuster.controllers',[])
 	   $scope.x = { letter: 'X', state: 'jb-disabled' };
   	 $scope.y = { letter: 'Y', state: 'jb-disabled' };
   	 $scope.z = { letter: 'Z', state: 'jb-disabled' };
+
 
   	 
   	 $scope.buttonArray = new Array($scope.a, $scope.b, $scope.c,$scope.d,$scope.f,$scope.g,$scope.h,$scope.i,$scope.l,$scope.m,$scope.n,$scope.o,$scope.p,$scope.r,$scope.s,$scope.t,$scope.u,$scope.v)

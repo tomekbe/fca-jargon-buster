@@ -140,13 +140,21 @@ angular.module('jargonBuster.customFilters',[])
        
   			if(value.length>1) {
 		  		var newList = [];
+
 		        var lower = value.toLowerCase();
-		        
+		        //console.log(lower)
+
 		        angular.forEach(list, function(v) {
 		                if (v[propertyName].toLowerCase().indexOf(lower) >= 0)
 		                    newList.push(v);
 		        });
-		        
+				
+				if (lower=="index") {
+					 angular.forEach(list, function(v) {
+		                
+		                    newList.push(v);
+		        	  });
+				}		        
 		        return newList;
   			
   			} 
