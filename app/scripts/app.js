@@ -10,7 +10,11 @@ angular.module('jargonBuster', [
     'jargonBuster.controllers',
     'jargonBuster.directives'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider,$locationProvider) {
+
+   
+    var site_prefix ='/preview/fca/jb-easy/app';
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -33,4 +37,4 @@ setTimeout(function() {
       angular.bootstrap(body, ['jargonBuster']);
  
 
-    }, 500);
+    }, 2500);
