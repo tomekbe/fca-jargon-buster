@@ -37,4 +37,4 @@ setTimeout(function() {
       angular.bootstrap(body, ['jargonBuster']);
  
 
-    }, 2500);
+    }, 750);
