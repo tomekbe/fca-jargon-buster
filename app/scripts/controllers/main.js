@@ -6,7 +6,7 @@ angular.module('jargonBuster.controllers',[])
   .controller('MainCtrl', function ($scope,dictionaryService,$routeParams) {
 
     $scope.myselect = 'word';
-
+    $scope.noterms = false;
     // if  the routeParams is not supplied by default it selects A; 
     $scope.query = $routeParams.id || 'A';
     $scope.all ={letter:'INDEX',state:'jb-unselected'};
